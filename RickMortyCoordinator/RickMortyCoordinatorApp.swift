@@ -25,7 +25,7 @@ struct RickMortyCoordinatorApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(characterList: CharacterListFactory().create())
         }
         .modelContainer(sharedModelContainer)
     }
